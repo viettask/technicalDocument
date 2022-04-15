@@ -1,0 +1,81 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	box-sizing:border-box;
+  outline:none;
+}
+body{
+ color: #4d4e53;  
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.4;
+}
+#nav{
+  width:260px;
+  height:800px;
+  border-right:1px solid black;
+   position: fixed;
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000;/*Hiển thị lớp trên cùng*/
+  overflow: visible;
+}
+#topic{
+  padding: 20px;
+   border-bottom:1px solid black; 
+}
+
+#nav ul li a{
+  text-decoration:none;
+  color:black;
+}
+.subject{
+  padding: 10px 20px;
+   border-bottom:1px solid black; 
+}
+#end{
+   padding: 10px 20px;
+}
+#content{
+  margin:40px 20px 20px 290px; 
+}
+.exp{
+  margin:10px;
+}
+.but{
+  margin:10px 10px 10px 50px;
+      display: list-item;     
+    list-style-type: disc;  
+    list-style-position: inside; 
+}
+#content h2{
+  margin:10px 0;
+}
+.code{
+  margin:10px 20px;
+  border-radius: 5px;
+  background:lightgrey;
+  padding:10px;
+  font-size:0.8rem;
+    line-height: 2;
+}
+
+@media only screen and (max-width: 900px) {
+#nav{
+  width:100%;
+  border:1px solid black;
+  position: absolute;
+  height:330px;
+}
+  #nav ul{
+      overflow-y: scroll;
+      height:250px;
+  }
+  #nav h2{
+    text-align:center;
+    margin:fixed;
+  }
+  #content{
+  margin:350px 20px 20px; 
+}
+}
